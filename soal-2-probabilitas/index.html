@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d20">
+  <meta name="description" content="Ruang belajar interaktif untuk memahami dan menghitung probabilitas.">
+  <title>Probabilitas Lab — Belajar Statistika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="topbar" id="beranda">
+    <a class="brand" href="#beranda" aria-label="Probabilitas Lab, beranda">
+      <span class="brand-mark" aria-hidden="true">∑</span>
+      <span>probabilitas<span class="brand-light">.lab</span></span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a class="nav-active" href="#beranda">Beranda</a>
+      <a href="#materi">Materi</a>
+      <a href="#kalkulator">Kalkulator</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+    <a class="top-cta" href="#kalkulator">Mulai belajar <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> RUANG BELAJAR STATISTIKA</p>
+        <h1 id="hero-title">Angka punya cerita.<br><span>Mari temukan polanya.</span></h1>
+        <p class="hero-text">Pahami probabilitas dengan cara yang lebih intuitif. Masukkan data, lihat hasilnya, dan ikuti langkah perhitungannya.</p>
+        <a class="button button-primary" href="#kalkulator">Mulai menghitung <span aria-hidden="true">→</span></a>
+        <div class="hero-meta"><span class="meta-icon">✳</span> Belajar interaktif <i></i> Hasil & langkah transparan</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi distribusi probabilitas">
+        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+        <div class="chart-card">
+          <div class="chart-head"><span>Distribusi peluang</span><span class="chart-live">LIVE</span></div>
+          <div class="chart-value">P(A) <b>0,72</b><span>+12,8%</span></div>
+          <svg viewBox="0 0 360 150" role="img" aria-label="Grafik kurva probabilitas yang meningkat">
+            <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#6e6bff" stop-opacity=".42"/><stop offset="1" stop-color="#6e6bff" stop-opacity="0"/></linearGradient></defs>
+            <path d="M0 128 C45 125 55 95 92 103 S142 117 174 72 S225 28 248 62 S290 100 315 47 S342 30 360 12 V150 H0Z" fill="url(#area)"/>
+            <path d="M0 128 C45 125 55 95 92 103 S142 117 174 72 S225 28 248 62 S290 100 315 47 S342 30 360 12" fill="none" stroke="#9d9aff" stroke-width="3"/>
+            <circle cx="248" cy="62" r="5" fill="#63e6f4" stroke="#fff" stroke-width="2"/>
+            <path d="M0 145H360M0 105H360M0 65H360M0 25H360" stroke="#fff" stroke-opacity=".08" stroke-dasharray="3 7"/>
+          </svg>
+          <div class="chart-labels"><span>0</span><span>0,25</span><span>0,5</span><span>0,75</span><span>1</span></div>
+        </div>
+        <span class="float-chip chip-one">P(A ∩ B)</span><span class="float-chip chip-two">∑ xᵢ</span>
+        <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="learning" id="materi">
+      <div class="section-heading">
+        <div><p class="eyebrow">JELAJAHI KONSEP</p><h2>Mulai dari yang ingin kamu pahami</h2></div>
+        <p class="section-note">Pilih topik untuk langsung membuka kalkulator.</p>
+      </div>
+      <div class="topic-grid">
+        <a class="topic topic-violet" href="#dasar"><span class="topic-icon">◉</span><span><b>Probabilitas dasar</b><small>Gabungan, irisan & komplemen</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic topic-cyan" href="#jumlah"><span class="topic-icon">▦</span><span><b>Peluang kejadian</b><small>Perbandingan jumlah hasil</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic topic-blue" href="#bersyarat"><span class="topic-icon">⟐</span><span><b>Probabilitas bersyarat</b><small>Peluang saat B telah terjadi</small></span><span class="topic-arrow">↗</span></a>
+        <a class="topic topic-pink" href="#bayes"><span class="topic-icon">⌁</span><span><b>Teorema Bayes</b><small>Perbarui peluang dengan bukti</small></span><span class="topic-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="workspace" id="kalkulator">
+      <div class="section-heading work-heading">
+        <div><p class="eyebrow">LABORATORIUM HITUNG</p><h2>Kalkulator probabilitas</h2></div>
+        <span class="secure-note"><span></span> Perhitungan langsung di perangkatmu</span>
+      </div>
+      <div class="calculator-grid">
+        <section class="card card-wide" id="dasar">
+          <div class="card-title"><span class="card-icon icon-violet">◉</span><div><p class="card-kicker">01 · KONSEP DASAR</p><h3>Probabilitas dasar</h3></div></div>
+          <p class="card-description">Bandingkan dua kejadian dan temukan peluang gabungan maupun irisannya.</p>
+          <div class="row">
+            <div><label for="pa">P(A)</label><input id="pa" inputmode="decimal" value="0,3"></div>
+            <div><label for="pb">P(B)</label><input id="pb" inputmode="decimal" value="0,4"></div>
+            <div><label for="rel">Hubungan A dan B</label><select id="rel"><option value="lepas">Saling lepas</option><option value="ind">Independen</option><option value="umum">Umum (isi P(A∩B))</option></select></div>
+            <div id="pabw" hidden><label for="pab">P(A∩B)</label><input id="pab" inputmode="decimal" value="0,1"></div>
+          </div>
+          <button class="button button-primary" id="h2a">Hitung probabilitas <span aria-hidden="true">→</span></button>
+          <div class="err" id="err2" role="alert"></div><div id="out2" aria-live="polite"></div>
+          <div class="divider"></div>
+          <div class="subcalc" id="jumlah">
+            <div class="sub-title"><span class="sub-icon">▦</span><div><p class="card-kicker">02 · RUANG SAMPEL</p><h3>Peluang dari jumlah kemungkinan</h3></div></div>
+            <p class="card-description">Hitung peluang kejadian dari jumlah hasil yang mungkin.</p>
+            <div class="row">
+              <div><label for="na">Banyak hasil kejadian A, n(A)</label><input id="na" inputmode="numeric" value="13"></div>
+              <div><label for="ns">Banyak seluruh hasil, n(S)</label><input id="ns" inputmode="numeric" value="52"></div>
+            </div>
+            <button class="button button-secondary" id="h2b">Hitung P(A) <span aria-hidden="true">→</span></button>
+            <div class="err" id="err2b" role="alert"></div><div id="out2b" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="card" id="bersyarat">
+          <div class="card-title"><span class="card-icon icon-blue">⟐</span><div><p class="card-kicker">03 · KEJADIAN BERSYARAT</p><h3>Probabilitas bersyarat</h3></div></div>
+          <p class="card-description">Cari peluang A jika kejadian B sudah diketahui terjadi.</p>
+          <div class="row">
+            <div><label for="cab">P(A∩B)</label><input id="cab" inputmode="decimal" value="0,12"></div>
+            <div><label for="cb">P(B)</label><input id="cb" inputmode="decimal" value="0,4"></div>
+          </div>
+          <button class="button button-primary" id="h3">Hitung P(A|B) <span aria-hidden="true">→</span></button>
+          <div class="err" id="err3" role="alert"></div><div id="out3" aria-live="polite"></div>
+          <div class="formula-hint">P(A|B) = P(A∩B) / P(B)</div>
+        </section>
+
+        <section class="card" id="bayes">
+          <div class="card-title"><span class="card-icon icon-pink">⌁</span><div><p class="card-kicker">04 · PEMBARUAN PELUANG</p><h3>Teorema Bayes</h3></div></div>
+          <p class="card-description">Pahami hasil positif sistem dengan memperhitungkan prevalensi dan false positive.</p>
+          <div class="row">
+            <div><label for="hn">Kejadian yang dicari (H)</label><input id="hn" value="phishing"></div>
+            <div><label for="tn">Hasil positif sistem (+)</label><input id="tn" value="ditandai"></div>
+            <div><label for="prev">Prevalensi P(H) dalam %</label><input id="prev" inputmode="decimal" value="8"></div>
+            <div><label for="sens">Sensitivitas P(+|H) dalam %</label><input id="sens" inputmode="decimal" value="92"></div>
+            <div><label for="fp">False positive P(+|H′) dalam %</label><input id="fp" inputmode="decimal" value="3"></div>
+          </div>
+          <button class="button button-primary" id="h4">Hitung Bayes <span aria-hidden="true">→</span></button>
+          <div class="err" id="err4" role="alert"></div><div id="out4" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer id="tentang"><a class="brand" href="#beranda"><span class="brand-mark" aria-hidden="true">∑</span><span>probabilitas<span class="brand-light">.lab</span></span></a><p>Belajar probabilitas, satu langkah pada satu waktu.</p><span class="footer-course">UTS Statistika · Teknik Informatika · Kelompok 5</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

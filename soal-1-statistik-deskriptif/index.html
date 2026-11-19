@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d20">
+<meta name="description" content="Ruang belajar dan kalkulator statistik deskriptif interaktif.">
+<title>Statistika — Ruang Belajar Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar">
+  <a class="brand" href="#beranda" aria-label="Statistika, beranda"><span class="brand-icon">σ</span><span>statistika<span class="brand-dot">.</span><small>RUANG BELAJAR DATA</small></span></a>
+  <nav aria-label="Navigasi utama"><a href="#beranda">Beranda</a><a href="#materi">Materi</a><a href="#kalkulator">Kalkulator</a><a href="#tentang">Tentang</a></nav>
+  <a class="nav-cta" href="#kalkulator">Mulai belajar <span>↗</span></a>
+</header>
+<main>
+  <section class="hero" id="beranda">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i> BELAJAR STATISTIKA, JADI LEBIH MUDAH</span>
+      <h1>Ubah angka<br>jadi <span>cerita.</span></h1>
+      <p>Jelajahi data, pahami pola, dan temukan insight dengan kalkulator statistik deskriptif interaktif.</p>
+      <a class="primary-btn" href="#kalkulator">Mulai menghitung <span>→</span></a>
+      <div class="hero-proof"><span class="proof-icon">✳</span><span><b>14 ukuran statistik</b><small>Dirangkum dalam satu ruang belajar</small></span></div>
+    </div>
+    <div class="hero-art" aria-label="Ilustrasi distribusi data">
+      <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+      <div class="chart-card"><div class="chart-top"><span>DATA DISTRIBUTION</span><b>↗</b></div><div class="chart-stat"><strong>μ</strong><span>pola tersembunyi<br>di dalam angka</span></div>
+        <svg viewBox="0 0 400 150" role="img" aria-label="Grafik distribusi naik"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#7c66ff" stop-opacity=".48"/><stop offset="1" stop-color="#36d9e8" stop-opacity="0"/></linearGradient></defs><path d="M0 128 C45 125 55 112 88 116 S130 103 151 89 S185 75 205 82 S246 45 266 59 S300 22 322 40 S358 10 400 4 V150 H0Z" fill="url(#fill)"/><path d="M0 128 C45 125 55 112 88 116 S130 103 151 89 S185 75 205 82 S246 45 266 59 S300 22 322 40 S358 10 400 4" fill="none" stroke="#73dcf5" stroke-width="3"/><circle cx="322" cy="40" r="5" fill="#fff" stroke="#73dcf5" stroke-width="3"/></svg>
+        <div class="chart-foot"><span>MIN <b>15</b></span><span>MEAN <b>72,3</b></span><span>MAX <b>100</b></span></div>
+      </div><span class="float-tag tag-one">x̄ <b>mean</b></span><span class="float-tag tag-two">Q₃ <b>kuartil</b></span><span class="art-spark">✳</span>
+    </div>
+    <div class="hero-bottom"><span>01 — ANALISIS DATA</span><span>↓ GULIR UNTUK MENJELAJAHI</span></div>
+  </section>
+  <section class="features" id="materi">
+    <div class="section-heading"><div><span class="eyebrow">DARI DATA KE PEMAHAMAN</span><h2>Semua yang kamu butuhkan.</h2></div><p>Kenali karakteristik data lewat empat sudut pandang utama.</p></div>
+    <div class="feature-grid">
+      <article class="feature-card"><span class="feature-icon violet">↗</span><span class="feature-index">01 / PUSAT DATA</span><h3>Nilai pusat</h3><p>Mean, median, dan modus merangkum kecenderungan data.</p></article>
+      <article class="feature-card"><span class="feature-icon cyan">⌁</span><span class="feature-index">02 / SEBARAN</span><h3>Ukuran sebaran</h3><p>Range, varians, dan standar deviasi menunjukkan variasi.</p></article>
+      <article class="feature-card"><span class="feature-icon pink">◫</span><span class="feature-index">03 / POSISI</span><h3>Kuartil & IQR</h3><p>Lihat posisi data dan rentang 50% nilai di tengah.</p></article>
+      <article class="feature-card"><span class="feature-icon lime">⌖</span><span class="feature-index">04 / ANOMALI</span><h3>Deteksi outlier</h3><p>Temukan nilai ekstrem dengan batas 1,5 kali IQR.</p></article>
+    </div>
+  </section>
+  <section class="calculator" id="kalkulator">
+    <div class="section-heading"><div><span class="eyebrow">LABORATORIUM DATA</span><h2>Waktunya menghitung.</h2></div><p>Masukkan datamu dan biarkan pola-pola di dalamnya muncul.</p></div>
+    <div class="workspace">
+      <aside class="step-rail"><span class="rail-label">ALUR ANALISIS</span><div class="rail-step active"><b>01</b><span>Input data<small>Masukkan dataset</small></span></div><div class="rail-step"><b>02</b><span>Analisis<small>Statistik dihitung</small></span></div><div class="rail-step"><b>03</b><span>Insight<small>Baca hasilnya</small></span></div><div class="rail-note">✦ <span>Angka adalah awal dari sebuah cerita.</span></div></aside>
+      <div class="input-panel">
+        <div class="panel-title"><span class="panel-number">01</span><div><h3>Masukkan data</h3><p>Pilih cara memasukkan kumpulan angkamu.</p></div></div>
+        <label for="manual">Ketik atau tempel data <span>Pisahkan dengan koma, spasi, titik koma, atau baris baru</span></label>
+        <textarea id="manual" placeholder="Contoh: 70, 85, 90, 65, 85, 100, 40" spellcheck="false"></textarea>
+        <div class="upload-row"><label for="csv">↑ <span>Unggah CSV atau TXT</span></label><small>Semua angka di file akan dibaca</small><input type="file" id="csv" accept=".csv,.txt,text/csv"></div>
+        <label for="vtype">Jenis data</label><select id="vtype"><option value="samp">Sampel — dibagi n − 1</option><option value="pop">Populasi — dibagi n</option></select>
+        <div class="action-row"><button class="b" id="hit">Hitung statistik <span>→</span></button><button class="b g" id="ex">Isi contoh</button><button class="b g reset" id="rs">Reset</button></div>
+        <div class="err" id="err1" role="alert" aria-live="polite"></div>
+        <p class="note">Kuartil dihitung dengan interpolasi linear (NumPy / Excel QUARTILE.INC). Untuk CSV multi-kolom, semua nilai angka akan terbaca.</p>
+      </div>
+    </div>
+    <div id="out1" aria-live="polite"></div>
+  </section>
+  <footer id="tentang"><a class="brand" href="#beranda"><span class="brand-icon">σ</span><span>statistika<span class="brand-dot">.</span><small>RUANG BELAJAR DATA</small></span></a><p>UTS Statistika Ganjil 2026/2027 · Teknik Informatika · Kelompok 5</p><a href="#beranda">Kembali ke atas ↑</a></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
